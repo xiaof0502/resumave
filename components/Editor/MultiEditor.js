@@ -50,14 +50,14 @@ const MultiEditor = ({ tab }) => {
 
     return (
         <div>
-            <button type="button" className="btn mb-6 ml-auto bg-gray-600/75 text-sm 2xl:text-base" onClick={addNew}>
+            <button type="button" className="btn mb-6 ml-auto text-sm 2xl:text-base" onClick={addNew}>
                 <LuPlus />
                 <span>Add New</span>
             </button>
 
             {resumeData?.length == 0 && (
                 <div className="my-16">
-                    <p className="text-center text-gray-500">Please Add a New {tab}</p>
+                    <p className="text-center text-black">Please Add a New {tab}</p>
                 </div>
             )}
 
